@@ -11,12 +11,16 @@
     max-width: 1500px;
 }
 
+body {
+    background: linear-gradient(45deg, white 70%, rgb(254, 233, 209));
+}
+
 /* ----------- NavBar ------------ */
 nav {
     position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-evenly;
     padding: 20px;
     width: 100%;
     height: 10vh;
@@ -365,9 +369,95 @@ nav .nav2 {
 
 /* ----------- Footer ------------ */
 .footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
     padding: 1.5%;
-    margin-top: 7%;
-    font-size: 14px;
     background-color: rgba(239, 121, 30, 0.3);
+}
+
+
+@media (max-width: 480px) {
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav .logo img {
+        width: 100px;
+    }
+
+    .nav2 .search input {
+        width: 120px;
+    }
+
+    .sec1,
+    .sec4 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sec1 .content h1,
+    .sec4 .content h1 {
+        font-size: 28px;
+    }
+
+    .sec1 .content,
+    .sec4 .content {
+        padding: 5%;
+    }
+
+
+    .sec3 .cardbox {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .sec1 .image img,
+    .sec2 .image img,
+    .sec4 .image img {
+        width: 80%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+
+    .sec6 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sec6 img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .sec6 div {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    .sec1 .content h1,
+    .sec4 .content h1 {
+        font-size: 3.5vw;
+    }
+
+    .btn {
+        padding: 20px 40px;
+        font-size: 1.2em;
+    }
 }
