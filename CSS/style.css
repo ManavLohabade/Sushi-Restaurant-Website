@@ -100,8 +100,8 @@ nav .nav2 {
 }
 
 .sec1 .content {
-     flex: 1;
-     max-width: 600px;
+    flex: 1;
+    max-width: 600px;
 
 }
 
@@ -404,16 +404,16 @@ nav .nav2 {
         text-align: center;
         padding: 50px 5%;
     }
-    
+
     .sec1 .content {
         order: 1;
     }
-    
+
     .sec1 .image {
         order: 0;
         margin-bottom: 30px;
     }
-    
+
     .sec1 .content h1 {
         font-size: 2.5rem;
     }
@@ -423,11 +423,11 @@ nav .nav2 {
     .sec1 .content h1 {
         font-size: 2rem;
     }
-    
+
     .sec1 .content p {
         font-size: 1rem;
     }
-    
+
     .sec1 .btn {
         padding: 10px 20px;
     }
